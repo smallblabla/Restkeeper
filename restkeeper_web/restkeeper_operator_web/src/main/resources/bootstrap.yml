@@ -1,0 +1,26 @@
+spring:
+  application:
+    # 应用名称
+    name: operator-web
+  cloud:
+    nacos:
+      discovery:
+        # nacos服务发现地址
+        server-addr: 39.99.235.48:8848
+      config:
+        # nacos配置中心地址
+        server-addr: 39.99.235.48:8848
+        # 配置文件的文件扩展名
+        file-extension: yml
+        # 配置文件的前缀
+        prefix: operator-web
+        # 共享配置的dataId
+        shared-dataids: common.yml
+        # 动态刷新的配置文件dataId
+        refreshable-dataids: common.yml
+  profiles:
+    # 激活的配置文件
+    active: dev
+server:
+  # 服务器端口
+  port: 8083

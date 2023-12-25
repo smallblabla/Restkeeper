@@ -1,0 +1,23 @@
+spring:
+  application:
+    # 应用名称
+    name: operator-dubbo-provider
+  profiles:
+    # 激活的配置文件
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务发现地址
+        server-addr: 39.99.235.48:8848
+      config:
+        # 配置地址
+        server-addr: 39.99.235.48:8848
+        # 配置文件后缀
+        file-extension: yml
+        # 配置文件前缀
+        prefix: operator-dubbo-provider
+        # 公共配置文件
+        shared-dataids: common.yml
+        # 可刷新的配置文件
+        refreshable-dataids: common.yml
