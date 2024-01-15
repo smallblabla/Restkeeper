@@ -15,4 +15,5 @@ public class Result {
     private Object data;
 
     private String token;
+
 }

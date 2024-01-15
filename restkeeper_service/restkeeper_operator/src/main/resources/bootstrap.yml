@@ -21,3 +21,5 @@ spring:
         shared-dataids: common.yml
         # 可刷新的配置文件
         refreshable-dataids: common.yml
+server:
+  port: 8080

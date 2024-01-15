@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -23,7 +24,7 @@ public class JWTUtil{
      * @return
      * @throws IOException
      */
-    public static String createJWTByObj(Map<String, Object> tokenMap, String secret) throws IOException {
+    public static String createJWTByObj(HashMap<Object, Object> tokenMap, String secret) throws IOException {
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
 
         SecretKey secretKey = generalKey(secret);
